@@ -20,7 +20,7 @@ export function generateMetadata({ params }: { params: { postId: string } }) {
 
     if (!post) {
         return {
-            title: 'Post Not Found'
+            title: 'Post Not Is Found'
         }
     }
 
