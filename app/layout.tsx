@@ -1,8 +1,7 @@
-import MyProfile from './components/MyProfile'
 import Navbar from './components/Navbar'
 import './globals.css'
-
-export const metadata = {
+import { Metadata } from 'next'
+export const metadata: Metadata = {
   title: 'Mark',
   description: 'Created by Mark Kiprotich',
 }
@@ -16,8 +15,10 @@ export default function RootLayout({
     <html lang="en">
       <body className='dark:bg-slate-800'>
         <Navbar />
-        <MyProfile/>
-        {children}</body>
+        <main className='px-4 md:px-6 prose prose-xl prose-slate dark:prose-invert mx-auto'>
+            {children}
+        </main>
+       </body>
     </html>
   )
 }
