@@ -1,7 +1,7 @@
 import MyProfile from "./components/MyProfile";
 import Posts from "./components/Posts";
 
-const revalidate = 10;
+const revalidate = 86400;
 export default function Home() {
   return (
     <div className="mx-auto">
